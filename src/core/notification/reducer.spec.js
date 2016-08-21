@@ -1,0 +1,36 @@
+import { DELETE_BILL_SUCCESS } from 'src/core/bills';
+
+import {
+  DISMISS_NOTIFICATION
+} from './action-types';
+
+import { notificationReducer } from './reducer';
+
+
+describe('Notification reducer', () => {
+  describe('DELETE_BILL_SUCCESS', () => {
+    it('should return correct state', () => {
+      let nextState = notificationReducer(undefined, {
+        type: DELETE_BILL_SUCCESS,
+        bill: {}
+      });
+
+      expect(nextState.actionLabel).toBe('Undo');
+      expect(nextState.display).toBe(true);
+      expect(nextState.message).toBe('Bill deleted');
+    });
+  });
+
+
+  describe('DISMISS_NOTIFICATION', () => {
+    it('should return correct state', () => {
+      let nextState = notificationReducer(undefined, {
+        type: DISMISS_NOTIFICATION
+      });
+
+      expect(nextState.actionLabel).toBe('');
+      expect(nextState.display).toBe(false);
+      expect(nextState.message).toBe('');
+    });
+  });
+});
