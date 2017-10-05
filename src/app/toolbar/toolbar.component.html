@@ -1,9 +1,18 @@
-<md-toolbar color="primary">
-  <span>Hidden Words</span>
-
-  <md-toolbar-row>
-    <span>Second Line</span>
-    <span class="example-spacer"></span>
-    <md-icon class="example-icon">verified_user</md-icon>
-  </md-toolbar-row>
+<md-toolbar color="primary" class="mat-elevation-z6">
+  <div class="button-row">
+    <button md-button>Hidden Words</button>
+    <button md-raised-button color="primary">Primary</button>
+  </div>
+  <span class="example-spacer"></span>
+  <div class="button-row">
+    <button md-icon-button color="accent">
+      <md-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</md-icon>
+    </button>
+    <button md-icon-button color="warn">
+      <md-icon class="md-24" aria-label="Example icon-button with a heart icon">announcement</md-icon>
+    </button>
+    <button md-icon-button>
+      <md-icon class="md-24" aria-label="Example icon-button with a heart icon">more_vert</md-icon>
+    </button>
+  </div>
 </md-toolbar>

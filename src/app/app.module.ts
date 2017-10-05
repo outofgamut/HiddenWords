@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MdToolbarModule, MdIconModule, MdGridListModule } from '@angular/material';
+import { MdToolbarModule, MdIconModule, MdGridListModule, MdButtonModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -20,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     FlexLayoutModule,
     MdToolbarModule,
     MdIconModule,
-    MdGridListModule
+    MdGridListModule,
+    MdButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
