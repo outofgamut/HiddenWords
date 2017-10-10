@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+
+$body-typography: mat-typography-config(
+  $font-family: '"Roboto Mono", monospace',
+  $headline: mat-typography-level(32px, 48px, 400),
+  $body-1: mat-typography-level(16px, 24px, 400)
+);
+
+$heading-typography: mat-typography-config(
+  $font-family: '"Rubik", sans-serif',
+  $headline: mat-typography-level(32px, 48px, 500),
+  $body-1: mat-typography-level(16px, 24px, 400)
+);
