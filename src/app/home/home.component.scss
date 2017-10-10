@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+@import '~styles/globals';
+
+// Create a config with the default typography levels.
+$config: mat-typography-config();
+
+.home-page {
+  padding-top: 2em;
+}
+
+.home-header {
+  font-size: mat-font-size($heading-typography, display-2);
+  font-weight: mat-font-weight($heading-typography, display-2);
+  font-family: mat-font-family($heading-typography);
+}
+
+.home-section {
+  font-size: mat-font-size($heading-typography, headline);
+  font-weight: mat-font-weight($heading-typography, headline);
+  font-family: mat-font-family($heading-typography);
+}
