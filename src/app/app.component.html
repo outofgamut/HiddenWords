@@ -1,11 +1,7 @@
-<div fxLayout="column">
-  <div fxFlex>
-    <app-toolbar></app-toolbar>
+<div fxFill fxLayout="column">
+  <app-toolbar fxFlex></app-toolbar>
+  <div fxFlex="grow">
+    <router-outlet></router-outlet>
   </div>
-  <div fxFlex>
-    <app-home></app-home>
-  </div>
-  <div fxFlex>
-    <app-footer></app-footer>
-  </div>
+  <app-footer fxFlex></app-footer>
 </div>
