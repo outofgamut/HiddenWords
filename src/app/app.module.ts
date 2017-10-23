@@ -3,7 +3,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MdToolbarModule, MdIconModule, MdGridListModule, MdButtonModule } from '@angular/material';
+import { MatToolbarModule, MatIconModule, MatGridListModule, MatButtonModule, MatCardModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -23,10 +23,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     FlexLayoutModule,
     AppRoutingModule,
-    MdToolbarModule,
-    MdIconModule,
-    MdGridListModule,
-    MdButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatGridListModule,
+    MatButtonModule,
+    MatCardModule,
     PlainSightModule
   ],
   providers: [],

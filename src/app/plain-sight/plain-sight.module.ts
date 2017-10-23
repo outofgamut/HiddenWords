@@ -1,13 +1,15 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { MatCardModule } from '@angular/material';
 
-import { PlainSightRoutingModule } from './plain-sight-routing.module';
 import { PlainSightListComponent } from './plain-sight-list/plain-sight-list.component';
+import { PlainSightRoutingModule } from './plain-sight-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    PlainSightRoutingModule
+    PlainSightRoutingModule,
+    MatCardModule
   ],
   declarations: [PlainSightListComponent]
 })
